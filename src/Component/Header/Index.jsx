@@ -10,7 +10,7 @@ const Header = () => {
   return (
     <div className={`mt-5 relative`}>
       <motion.div
-        initial={{ opacity: 1, x: -150, y: -12 }}
+        initial={{ opacity: 1, x: -150, y: -14 }}
         animate={{ opacity: 1, x: 0, y: -20 }}
         transition={{
           repeat: Infinity,
@@ -32,7 +32,7 @@ const Header = () => {
         <div>
           <img src={imageURl} alt={imageURl} />
         </div>
-        <div className="pl-52">
+        <div className="pl-52 z-10">
           <ul className="flex items-center justify-center gap-10 ">
             <li className="flex  items-center justify-center gap-1 group  relative  group/anchor ">
               <a href="#" className="group/anchor ">
@@ -212,6 +212,7 @@ const Header = () => {
         >
           <a href="#">Get a quote</a>
         </motion.div>
+
         <div className="rounded-xl ml-5 bg-black text-primary_color px-5 py-4 ">
           <FaBars className="text-lg" />
         </div>
