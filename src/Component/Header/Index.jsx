@@ -9,14 +9,14 @@ const Header = () => {
   return (
     <div className={`mt-3 relative`}>
       <motion.div
-        initial={{ opacity: 1, x: 0, y: -12 }}
-        animate={{ opacity: 0, x: -150, y: -12 }}
+        initial={{ opacity: 0, x: -150, y: -12 }}
+        animate={{ opacity: 1, x: 0, y: -20 }}
         transition={{
-          duration: 5,
-          repeat: "loop",
-          // type: "spring",
-          // ease: [0.17, 0.67, 0.83, 0.67],
+          repeat: Infinity,
+          repeatType: "reverse",
           delay: 0,
+          duration: 4,
+          ease: "easeInOut",
         }}
         className="absolute  mr-9"
       >
