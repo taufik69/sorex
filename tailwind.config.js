@@ -3,9 +3,22 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      animation: {
+        spin: "spin .2s linear ",
+      },
+
+      keyframes: {
+        spin: {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(180deg)" },
+        },
+      },
       colors: {
         primary_color: "var(--primary_color)",
         secondary_color: "var(--secondary_color)",
+      },
+      fontFamily: {
+        "sans-serif": ["Open Sans", "sans-serif"],
       },
       container: {
         center: true,
@@ -18,8 +31,8 @@ export default {
         },
       },
       backgroundImage: {
-        "Header_shape1": "url('../../assets/Images/bannerImages/shape1.png')",
-        "Header_shape2": "url('../../assets/Images/bannerImages/shape2.png')",
+        Header_shape1: "url('../../assets/Images/bannerImages/shape1.png')",
+        Header_shape2: "url('../../assets/Images/bannerImages/shape2.png')",
       },
     },
   },
