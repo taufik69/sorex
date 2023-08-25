@@ -2,6 +2,11 @@ import React from "react";
 import bannerImage from "../../assets/Images/bannerImages/banner_image.png";
 import merondot from "../../assets/Images/bannerImages/merondot.png";
 import bluedot from "../../assets/Images/bannerImages/bluedot.png";
+import company1 from "../../assets/Images/bannerImages/c1.png";
+import company2 from "../../assets/Images/bannerImages/c2.png";
+import company3 from "../../assets/Images/bannerImages/c3.png";
+import company4 from "../../assets/Images/bannerImages/c4.png";
+import bannerShap from "../../assets/Images/bannerImages/bannerShape.png";
 import { motion } from "framer-motion";
 const Banner = () => {
   return (
@@ -87,6 +92,38 @@ const Banner = () => {
               </motion.div>
             </div>
           </div>
+        </div>
+        <div className="flex  justify-between">
+          <div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div>
+            <ul className="flex justify-between items-center">
+              <li>
+                <img src={company1} alt={company1} />
+              </li>
+              <li>
+                <img src={company2} alt={company2} />
+              </li>
+
+              <li>
+                <img src={company3} alt={company3} />
+              </li>
+
+              <li>
+                <img src={company4} alt={company4} />
+              </li>
+            </ul>
+          </div>
+          <motion.div className="realtive">
+            <img
+              src={bannerShap}
+              alt={bannerShap}
+              className="w-[10%] absolute -bottom-64 rotate-12 right-10"
+            />
+          </motion.div>
         </div>
       </div>
     </>
