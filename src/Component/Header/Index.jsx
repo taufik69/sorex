@@ -214,7 +214,36 @@ const Header = () => {
         </motion.div>
 
         <div className="rounded-xl ml-5 bg-black text-primary_color px-5 py-4 ">
-          <FaBars className="text-lg" />
+          <div class="text-center">
+            <button
+              data-drawer-target="drawer-example"
+              data-drawer-show="drawer-example"
+              aria-controls="drawer-example"
+            >
+              <FaBars className="text-lg" />
+            </button>
+          </div>
+
+          <div
+            id="drawer-example"
+            class="fixed top-0 right-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-black w-80 "
+            tabindex="-1"
+            aria-labelledby="drawer-label"
+          >
+            <button
+              type="button"
+              data-drawer-hide="drawer-example"
+              aria-controls="drawer-example"
+              class="text-gray-400  bg-primary_color  hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 right-2.5 inline-flex items-center justify-center"
+            >
+              X
+            </button>
+
+            {/* bar menu content */}
+          
+            {/* bar menu content */}
+
+          </div>
         </div>
         <motion.div
           className="ml-6"
