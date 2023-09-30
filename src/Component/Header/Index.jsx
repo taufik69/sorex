@@ -5,8 +5,13 @@ import Shape_overlay from "../../assets/Images/bannerImages/sketch-overlay.png";
 import sAlphabet from "../../assets/Images/bannerImages/s_alphabet.png";
 import { MdOutlineKeyboardDoubleArrowDown } from "react-icons/md";
 import { motion } from "framer-motion";
-import { FaBars } from "react-icons/fa";
-import { AiOutlinePlus } from "react-icons/ai";
+import { FaBars, FaFacebookF } from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
+import { GrLocation } from "react-icons/gr";
+import { BsTelephoneInboundFill, BsInstagram } from "react-icons/bs";
+import { BiLogoTwitter } from "react-icons/bi";
+import { DiBingSmall } from "react-icons/di";
+
 const Header = () => {
   let [navbar, setnavbar] = useState(false);
   let [drawernavbar, setdrawernavbar] = useState(true);
@@ -448,6 +453,66 @@ const Header = () => {
             )}
 
             {/* acordian down */}
+
+            {/* another part of modal */}
+            <div className="p-5 relative">
+              <h1 className="font-sans-serif text-white text-xl font-bold pb-10 after:absolute after:top-0 after:left-0 after:w-full after:h-[1px] after:bg-gray-500">
+                Get in Touch
+              </h1>
+
+              <div className="flex gap-x-5 items-center mb-6">
+                <div>
+                  <AiOutlineMail className="w-10 h-10 rounded-full bg-primary_color text-white text-[5px] p-2" />
+                </div>
+                <div>
+                  <h3 className="text-gray-400">Email</h3>
+                  <a href="#" className="text-bold text-white font-semibold">
+                    taufikisla172@gmail.com
+                  </a>
+                </div>
+              </div>
+              <div className="flex gap-x-5 items-center mb-6">
+                <div>
+                  <BsTelephoneInboundFill className="w-10 h-10 rounded-full bg-primary_color text-white text-[5px] p-2" />
+                </div>
+                <div>
+                  <h3 className="text-gray-400">Phone</h3>
+                  <a href="#" className="text-bold text-white font-semibold">
+                    01875933259
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex gap-x-5 items-center mb-6">
+                <div>
+                  <GrLocation className="w-10 h-10 rounded-full bg-primary_color text-white text-[5px] p-2" />
+                </div>
+                <div>
+                  <h3 className="text-gray-400">Location</h3>
+                  <a href="#" className="text-bold text-white font-semibold">
+                    taufikisla172@gmail.com
+                  </a>
+                </div>
+              </div>
+            </div>
+            {/* another part of modal */}
+
+            {/* icon list  of modal part  */}
+            <div className="flex justify-between p-5 items-center text-white">
+              <div>
+                <BiLogoTwitter className="w-10 h-10 p-1 rounded-lg bg-teal-400" />
+              </div>
+              <div>
+                <BsInstagram className="w-10 h-10 p-2 rounded-lg bg-amber-700" />
+              </div>
+              <div>
+                <FaFacebookF className="w-10 h-10 p-2 rounded-lg bg-blue-800" />
+              </div>
+              <div>
+                <DiBingSmall className="w-10 h-10 p-1 rounded-lg bg-purple-700 hover:bg-slate-500 cursor-pointer" />
+              </div>
+            </div>
+            {/* icon list  of modal part  */}
           </div>
         </div>
         <motion.div
